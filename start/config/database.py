@@ -6,7 +6,10 @@ Created on Sep 20, 2015
 @author: jh
 '''
 import os
+
 from settings import ROOT
+
+
 DATABASES = {
     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
