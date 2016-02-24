@@ -9,7 +9,7 @@ Created on Oct 9, 2015
 
 from django.core.urlresolvers import reverse
 from django.http import Http404
-from django.shortcuts import render, HttpResponseRedirect, redirect
+from django.shortcuts import render, HttpResponseRedirect
 
 
 class BaseView(object):
