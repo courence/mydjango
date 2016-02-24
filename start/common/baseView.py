@@ -8,10 +8,10 @@ Created on Oct 9, 2015
 '''
 
 from django.http import Http404
-from django.shortcuts import render
+from django.shortcuts import render,HttpResponseRedirect,redirect
+from django.core.urlresolvers import reverse
 
-
-class BaseViews(object):
+class BaseView(object):
 
     @classmethod
     def base(cls, request, *args, **kwargs):
@@ -51,4 +51,8 @@ class BaseViews(object):
     def render(self, template, context={} ,**kwargs):
         
         return render(self.request,template,context)
+    
+    def redirect(self,viewname, *args, **kwargs):
+        '''重定向'''
+        return HttpResponseRedirect(reverse(viewname))
         

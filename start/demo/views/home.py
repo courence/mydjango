@@ -9,14 +9,14 @@ Created on Oct 9, 2015
 
 from datetime import datetime
 
-from common.base_views import BaseViews
+from common.baseView import BaseView
 
 
-class HomeViews(BaseViews):
+class HomeView(BaseView):
 
     @classmethod
     def base(cls, request, *args, **kwargs):
-        return super(HomeViews, cls).base(request, *args, **kwargs)
+        return super(HomeView, cls).base(request, *args, **kwargs)
     
     def test(self,*args,**kwargs):
         now = datetime.now()

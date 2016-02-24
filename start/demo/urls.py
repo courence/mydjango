@@ -8,9 +8,9 @@ Created on Oct 9, 2015
 '''
 from django.conf.urls import url
 
-from demo.views.home import HomeViews
+from demo.views.home import HomeView
 
 
 urlpatterns = [
-    url(r'^home/test/$', HomeViews.base,{'action':'test'},name="home_test"),
+    url(r'^home/test/$', HomeView.base,{'action':'test'},name="home_test"),
 ]
