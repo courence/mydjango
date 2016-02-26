@@ -8,7 +8,7 @@ Created on Oct 9, 2015
 '''
 from django.conf.urls import url
 
-from diary.views.diaryView import DiaryView
+from diary.views.diaryview import DiaryView
 
 
 urlpatterns = [

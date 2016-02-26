@@ -9,7 +9,7 @@ Created on Feb 24, 2016
 from datetime import datetime
 from django.core.urlresolvers import reverse
 
-from common.baseView import BaseView
+from common.baseview import BaseView
 from diary.models import Diary
 
 

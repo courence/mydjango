@@ -9,7 +9,7 @@ Created on Oct 9, 2015
 
 from datetime import datetime
 
-from common.baseView import BaseView
+from common.baseview import BaseView
 
 
 class HomeView(BaseView):
