@@ -34,3 +34,26 @@ class DiaryType(models.Model):
     user_id = models.IntegerField()
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    
+
+class Task(models.Model):
+    class Meta:
+        db_table = 'task'
+        
+    title = models.CharField(max_length=64)
+    content = models.TextField()
+    type_code = models.CharField(max_length=32)
+    begin_at = models.DateTimeField()
+    end_at = models.DateTimeField()
+    state =  models.CharField(max_length=32)
+    updated_at = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    
+class Introspection(models.Model):
+    class Meta:
+        db_table = 'introspection'
+        
+    type = models.CharField(max_length=64)
+    description = models.CharField(max_length=256)
+    updated_at = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True)
